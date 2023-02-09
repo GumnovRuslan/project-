@@ -1,7 +1,11 @@
 .header {
 
     &__top {
-        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     &__top-inner {
@@ -11,25 +15,8 @@
         max-width: pxToRem(1440);
         height: pxToRem(94);
         padding: 0 pxToRem(32);
+        background: $color-white;
     }
-
-    &__content {
-    }
-
-    &__content-inner {
-        
-    }
-
-    &__content-title {
-    }
-
-    &__content-description {
-    }
-
-    &__content-decor {
-    }
-}
-.container {
 }
 .logo {
 
@@ -47,7 +34,7 @@
 
     &__list {
         display: flex;
-        gap: pxToRem(10);
+        gap: pxToRem(30);
         padding: 0 pxToRem(10);
     }
 
