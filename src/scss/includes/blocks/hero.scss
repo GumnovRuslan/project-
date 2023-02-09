@@ -1,0 +1,41 @@
+.hero {
+
+    &__content {
+        
+    }
+
+    &__content-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: pxToRem(18.5);
+        width: 100vw;
+        height: 100vh;
+        background: 
+		linear-gradient(180deg, rgba(255, 255, 255, 0.141514) 0%, 
+        rgba(0, 0, 0, 0.496883) 100%), 
+		url(../../../img/Header-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top; 
+    }
+
+    &__content-title {
+        font-weight: 700;
+        font-size: pxToRem(100);
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__content-description {
+        font-weight: 700;
+        text-align: center;
+        line-height: pxToRem(20);
+        letter-spacing: pxToRem(2.74286);
+        color: $color-yellow;
+    }
+
+    &__content-decor {
+    }
+}
