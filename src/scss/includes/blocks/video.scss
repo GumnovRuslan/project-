@@ -1,0 +1,33 @@
+.video {
+
+    &__motivation {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(51);
+        max-width: pxToRem(570);
+        margin: 0 auto;
+        padding: pxToRem(130) 0 pxToRem(148) 0;
+    }
+
+    &__quotes {
+        text-align: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: pxToRem(18);
+        line-height: pxToRem(36);
+        color: $color-black;
+    }
+
+    &__quotes-author {
+        text-align: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: pxToRem(14);
+        line-height: pxToRem(23);
+        color: #9E9E9E;
+    }
+
+    &__content {
+        width: 100vw;
+    }
+}
