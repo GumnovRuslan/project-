@@ -1,0 +1,24 @@
+.about {
+
+    &__inner {
+        padding: pxToRem(143) 0;
+        display: flex;
+        justify-content: space-between;
+        gap: pxToRem(56);
+    }
+
+    &__title {
+        font-size: pxToRem(48);
+    }
+
+    &__text {
+        max-width: pxToRem(770);
+        font-weight: 300;
+        font-size: pxToRem(14);
+        line-height: pxToRem(24);
+        color: $color-green;
+        :not(:last-child) {
+            margin-bottom: pxToRem(5);
+        }
+    }
+}
