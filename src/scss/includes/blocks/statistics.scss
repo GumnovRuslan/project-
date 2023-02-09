@@ -1,0 +1,28 @@
+.statistics {
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        padding: pxToRem(165) 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-num {
+        text-align: center;
+        font-weight: 700;
+        font-size: pxToRem(60);
+        line-height: pxToRem(73);
+        color: $color-black;
+    }
+
+    &__item-text {
+        text-align: center;
+        font-size: pxToRem(14);
+        line-height: pxToRem(19);
+        color: #00B2A0;
+    }
+}
