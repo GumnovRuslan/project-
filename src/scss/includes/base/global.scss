@@ -95,3 +95,28 @@ h1, h2, h3, h4, p {
 	margin: 0;
 	padding: 0;
 }
+
+// ====================================
+
+.title {
+    position: relative;
+    font-weight: 700;
+    line-height: pxToRem(75);
+    letter-spacing: pxToRem(-1.65);
+    white-space: nowrap;
+    color: $color-black;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: pxToRem(-14);
+        left: 0;
+        width: pxToRem(60);
+        height: pxToRem(4);
+        background: $color-yellow;
+    }
+}
+
+.container {
+    padding: 0 pxToRem(135);
+}
