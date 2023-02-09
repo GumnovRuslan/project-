@@ -95,3 +95,13 @@ h1, h2, h3, h4, p {
 	margin: 0;
 	padding: 0;
 }
+
+
+.text {
+	font-weight: 300;
+	font-size: pxToRem(14);
+	line-height: pxToRem(24);
+	:not(:last-child) {
+		margin-bottom: pxToRem(5);
+	}
+}
