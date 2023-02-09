@@ -1,0 +1,77 @@
+.postfolio {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        padding: pxToRem(141) 0 pxToRem(120) 0;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: pxToRem(20);
+    }
+
+    &__btn {
+        display: block;
+        font-weight: 600;
+        font-size: pxToRem(10);
+        line-height: pxToRem(24);
+        letter-spacing: pxToRem(2);
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    &__items {
+        display: inline-grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: pxToRem(22);
+        margin-bottom: pxToRem(72);
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: pxToRem(14);
+        line-height: pxToRem(14);
+        letter-spacing: pxToRem(1.4);
+        color: $color-white;
+    }
+
+    &__item-descr {
+        font-weight: 300;
+        font-size: pxToRem(14);
+        line-height: pxToRem(16);
+        letter-spacing: pxToRem(1);
+        color: $color-white;
+    }
+
+    &__btn-all {
+        font-weight: 700;
+        font-size: pxToRem(14);
+        line-height: pxToRem(17);
+        letter-spacing: pxToRem(1.2);
+        color: $color-black;
+        width: 100vw;
+        height: pxToRem(100);
+    }
+}
+
+.images {
+
+    &__item-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: pxToRem(10);
+        justify-content: center;
+        width: pxToRem(343);
+        height: pxToRem(300);
+        border: pxToRem(12) solid $color-black;
+        background: $color-green;
+
+        &:nth-child(3n-2) {
+            height: pxToRem(494);
+        }
+    }
+}
