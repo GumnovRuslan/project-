@@ -22,16 +22,16 @@
 	position: relative;
 }
 
-.container {
-	margin: auto;
-	max-width: 1230px;
-	padding: 0 24px;
-	width: 100%;
+// .container {
+// 	margin: auto;
+// 	max-width: 1230px;
+// 	padding: 0 24px;
+// 	width: 100%;
 	
-	@include desktop {
-		padding: 0 15px;
-	}
-}
+// 	@include desktop {
+// 		padding: 0 15px;
+// 	}
+// }
 
 .clearfix::after {
 	content: "";

@@ -1,0 +1,5 @@
+$base-size: 16;
+
+@function pxToRem($size, $postfix: rem) {
+  @return $size / $base-size * 1 + $postfix;
+}
