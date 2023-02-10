@@ -4,11 +4,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: pxToRem(110) 0 pxToRem(60) 0;
+        padding: pxToRem(90) 0 pxToRem(60) 0;
         background: #373A39;
     }
 
     &__soicial {
+        display: flex;
+        gap: pxToRem(8);
         margin-bottom: pxToRem(55);
     }
 
@@ -17,6 +19,7 @@
         font-weight: 300;
         font-size: pxToRem(12);
         line-height: pxToRem(15);
+        letter-spacing: pxToRem(4);
         color: $color-white;
     }
 
@@ -68,7 +71,7 @@
     &::before {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: pxToRem(-4);
         left: calc(50% - 75px);
         width: pxToRem(150);
         height: pxToRem(2);
