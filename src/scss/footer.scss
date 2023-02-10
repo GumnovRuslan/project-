@@ -1,1 +1,115 @@
-.footer {}
+.footer {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: pxToRem(90) 0 pxToRem(60) 0;
+        background: #373A39;
+    }
+
+    &__soicial {
+        display: flex;
+        gap: pxToRem(8);
+        margin-bottom: pxToRem(55);
+    }
+
+    &__social-link {
+        padding: pxToRem(10);
+        font-weight: 300;
+        font-size: pxToRem(12);
+        line-height: pxToRem(15);
+        letter-spacing: pxToRem(4);
+        color: $color-white;
+    }
+
+    &__addres {
+        text-align: center;
+        font-size: pxToRem(14);
+        line-height: pxToRem(32);
+        color: #CCCCCC;
+    }
+
+    &__phone {
+        display: block;
+        text-align: center;
+        font-size: pxToRem(14);
+        line-height: pxToRem(32);
+        color: #CCCCCC;
+    }
+
+    &__email {
+        display: block;
+        margin-bottom: pxToRem(57);
+        text-align: center;
+        font-size: pxToRem(14);
+        line-height: pxToRem(32);
+        color: #CCCCCC;
+    }
+
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: pxToRem(100);
+        font-size: pxToRem(12);
+        line-height: pxToRem(16);
+        color: #CCCCCC;
+        background: #2A2C2B;
+    }
+}
+.container {
+}
+.logo--line {
+    position: relative;
+    width: pxToRem(80);
+    margin: 0 auto;
+    margin-bottom: pxToRem(73);
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: pxToRem(-4);
+        left: calc(50% - 75px);
+        width: pxToRem(150);
+        height: pxToRem(2);
+        background: $color-yellow;
+    }
+}
+.footer-to {
+    
+    &__top-btn {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        width: pxToRem(40);
+        height: pxToRem(30);
+        margin: 0 auto;
+        background: transparent;
+        border: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: calc(50% - 2px);
+            top: calc(50% - 2px);;
+            width: pxToRem(12);
+            height: pxToRem(2);
+            transform: rotate(45deg);
+            background: $color-white;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: calc(50% - 2px);
+            top: calc(50% - 2px);
+            width: pxToRem(12);
+            height: pxToRem(2);
+            transform: rotate(-45deg);
+            background: $color-white;
+        }
+    }
+}
