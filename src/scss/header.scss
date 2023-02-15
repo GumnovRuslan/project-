@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: pxToRem(1440);
+        width: 100vw;
         height: pxToRem(94);
         padding: 0 pxToRem(32);
         background: $color-white;
